@@ -26,10 +26,19 @@ Neither build is code-signed, so each operating system will complain the first t
 
 **Windows** shows "unknown publisher" — click *More info* → *Run anyway*.
 
-**macOS** says the app *"is damaged and can't be opened"*. It is not damaged. That is what macOS
-says about any app without a paid Apple Developer signature, and unhelpfully it is also what it says
-about a genuinely broken download. Right-click the app → **Open** → **Open**. Once only; it launches
-normally afterwards.
+**macOS** says the app *"is damaged and can't be opened"*. It is not damaged — the download is
+fine, and each release lists a SHA-256 you can check. That is what macOS says about apps without a
+paid Apple Developer signature.
+
+Right-click → Open used to get past this and **no longer works on macOS 15 and later**. What works
+today:
+
+```
+xattr -dr com.apple.quarantine /Applications/PetSpawner.app
+```
+
+Then open it normally. If running that is not something you want to do, this build is not yet for
+you — a paid Apple Developer ID is the proper fix and it is on the list.
 
 If you want to verify what you downloaded, every release lists a SHA-256 for each file, and
 `latest.yml` carries a SHA-512 for the Windows installer.
