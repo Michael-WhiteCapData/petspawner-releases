@@ -1,5 +1,9 @@
 # PetSpawner — releases
 
+> **Shelved (2026-09-17).** PetSpawner is no longer developed. The existing builds below still
+> install and run, but the global leaderboard server has been taken down, so the
+> "Join the global leaderboard" option no longer works and no further updates will ship.
+
 A desktop companion app: spawn, collect and look at pixel-art dogs, and keep one on your desktop
 while you work.
 
