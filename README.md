@@ -5,7 +5,7 @@ while you work.
 
 ## Download
 
-**[→ Go to the latest release](https://github.com/whitecapdata/petspawner-releases/releases/latest)**
+**[→ Go to the latest release](https://github.com/Michael-WhiteCapData/petspawner-releases/releases/latest)**
 and pick your file from the table at the top of it:
 
 | Platform | File | |
